@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const AudioSettings = () => {
   // State for toggles
@@ -11,19 +11,18 @@ const AudioSettings = () => {
 
   return (
     <div className="w-60 p-4 bg-teal-500 rounded-lg shadow-md">
-      
       {/* Sound Effects Toggle */}
       <div className="flex justify-between items-center mb-4">
         <span className="text-white">Sound effects</span>
         <div
           className={`w-12 h-6 flex items-center rounded-full p-1 cursor-pointer ${
-            soundEffects ? 'bg-cyan-400' : 'bg-gray-400'
+            soundEffects ? "bg-cyan-400" : "bg-gray-400"
           }`}
           onClick={toggleSoundEffects}
         >
           <div
             className={`bg-white w-5 h-5 rounded-full shadow-md transform transition-transform ${
-              soundEffects ? 'translate-x-6' : ''
+              soundEffects ? "translate-x-6" : ""
             }`}
           ></div>
         </div>
@@ -34,13 +33,13 @@ const AudioSettings = () => {
         <span className="text-white">Music</span>
         <div
           className={`w-12 h-6 flex items-center rounded-full p-1 cursor-pointer ${
-            music ? 'bg-cyan-400' : 'bg-gray-400'
+            music ? "bg-cyan-400" : "bg-gray-400"
           }`}
           onClick={toggleMusic}
         >
           <div
             className={`bg-white w-5 h-5 rounded-full shadow-md transform transition-transform ${
-              music ? 'translate-x-6' : ''
+              music ? "translate-x-6" : ""
             }`}
           ></div>
         </div>
